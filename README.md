@@ -1,5 +1,5 @@
-# ga-beacon
-Google analytics beacon 
+# Google analytics Beacon
+This is updated and modernized version of original (igrigorik/ga-beacon)[https://github.com/igrigorik/ga-beacon]
 
 
 original  
