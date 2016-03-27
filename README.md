@@ -6,6 +6,8 @@ As the original author suggests:
 This repo is created with that idea in mind. Its usage is also restricted by your onw tracking ids (`UA-XXXXX-X`). The file `ga-beacon/conf.json` contains a white list of allowed tracking ids. This implies, you have to update the list everytime you want to track something with a new tracking id (`UA-XXXXX-X`). Leave the list empty, if you don't want to restrict, but keep in mind, with no restrictions anyone can use your application instance for tracking their visitors and you may pay for that.
 
 ### How to deploy
+1. Using Google Developers Console https://console.cloud.google.com/ (easy)
+2. Using Google App Engine SDK for Go https://cloud.google.com/appengine/downloads#Google_App_Engine_SDK_for_Go (advanced)
 
 http://stackoverflow.com/questions/32107712/google-app-engine-app-deployment
 
