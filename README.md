@@ -22,10 +22,22 @@ Its usage is also restricted by your onw tracking ids (`UA-XXXXXXXX-X`). The fil
 You should deploy this application on your server. Using Google App Engine is free and easiest way to do so. Be aware of GAE free usage limits https://cloud.google.com/appengine/docs/quotas#Requests. If you run over quota, you'll see the image above and lose some stats. Unless you have very popular resource or other people also use your instance for tracking (consider applying the restriction), GAE daily limits are very generous. There are two options for delpoyment on GAE:
 
 #### Using Google Developers Console (easy)
-https://console.cloud.google.com/
+
+1. Fork this repo
+2. Go to https://console.cloud.google.com/
+3. Create a project **My-Project**
+4. Go to Development->Source code and connet the forked repo
+5. cd ~/src/My-Project-ID/
+6. gcloud preview app deploy app.yaml --promote 
+7. see the app at https://vitr-analytics.appspot.com/UA-75628680-1/
+
+ 
+
 
 #### Using Google App Engine SDK for Go (advanced)
 https://cloud.google.com/appengine/downloads#Google_App_Engine_SDK_for_Go
+
+[Hello, World! in 5 minutes - Go — Google Cloud Platform](https://cloud.google.com/appengine/docs/go/)
 
 http://stackoverflow.com/questions/32107712/google-app-engine-app-deployment
 
