@@ -8,7 +8,7 @@ As the original author suggests:
 >there are no capacity or availability promises. For best results, deploy your own instance directly on Google App Engine.
 
 Unfortunately, many people don't bother with creating  their own instances and we all see this
-![over quota image](https://github.com/vitr/vitr.github.io/blob/master/_drafts/Image%201.png?raw=true "Over Quota")
+![over quota error image](https://github.com/vitr/vitr.github.io/blob/master/_posts/Image%201.png?raw=true "Over Quota")
 
 This repo was created to help you with setting up your own Google Analytis Beacon application, so, you will never have availabiltiy issues like above.
 
