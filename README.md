@@ -1,10 +1,14 @@
 # Google Analytics Beacon ![analytics image](https://raw.githubusercontent.com/igrigorik/ga-beacon/master/static/badge-flat.gif "Analytics Image - Flat")
+
+---------------
+Sometimes it is impossible to embed the JavaScript tracking code provided by Google Analytics: the host page does not allow arbitrary JavaScript, and there is no Google Analytics integration. However, not all is lost! **If you can embed a simple image (pixel tracker), then you can beacon data to Google Analytics.**
+
+---------------
 This is tweaked version of [igrigorik/ga-beacon](https://github.com/igrigorik/ga-beacon).
 As the original author suggests:
 >there are no capacity or availability promises. For best results, deploy your own instance directly on Google App Engine.
 
 Unfortunately, many people don't bother with creating  their own instances and we all see this
-
 ![over quota image](https://github.com/vitr/vitr.github.io/blob/master/_drafts/Image%201.png?raw=true "Over Quota")
 
 This repo was created to help you with setting up your own Google Analytis Beacon application, so, you will never have availabiltiy issues like above.
@@ -18,21 +22,23 @@ Its usage is also restricted by your onw tracking ids (`UA-XXXXXXXX-X`). The fil
 
 
 ### How to deploy
-1. Using Google Developers Console https://console.cloud.google.com/ (easy)
-2. Using Google App Engine SDK for Go https://cloud.google.com/appengine/downloads#Google_App_Engine_SDK_for_Go (advanced)
+You should deploy this application on your server. Using Google App Engine is free and easiest way to do so. Be aware of GAE free usage limits https://cloud.google.com/appengine/docs/quotas#Requests. If you run over quota, you'll see the image above and lose some stats. Unless you have very popular resource or other people also use your instance for tracking (consider apply the restriction), GAE daily limits are very generous. There are two options for delpoyment
+
+1. Google Developers Console (easy)
+2. Google App Engine SDK for Go (advanced)
+
+#### Using Google Developers Console 
+https://console.cloud.google.com/
+
+#### Using Google App Engine SDK for Go
+https://cloud.google.com/appengine/downloads#Google_App_Engine_SDK_for_Go
+
 
 http://stackoverflow.com/questions/32107712/google-app-engine-app-deployment
 
 In my case, I got refused because the appcfg save my ouauth2 token in the file ~/.appcfg_oauth2_tokens, which happen to be another account of appengine . Simply remove the file and try again.
 
-It's useful to read the original project [FAQ](https://github.com/igrigorik/ga-beacon#faq)
----------------
-Sometimes it is impossible to embed the JavaScript tracking code provided by Google Analytics: the host page does not allow arbitrary JavaScript, and there is no Google Analytics integration. However, not all is lost! **If you can embed a simple image (pixel tracker), then you can beacon data to Google Analytics.** For a great, hands-on explanation of how this works, check out the following guides:
-
-* [Using a Beacon Image for GitHub, Website and Email Analytics](http://www.sitepoint.com/using-beacon-image-github-website-email-analytics/)
-* [Tracking Google Sheet views with Google Analytics using GA Beacon](http://mashe.hawksey.info/2014/02/tracking-google-sheet-views-with-google-analytics/)
-
-### Setup instructions
+### How to setup
 
 First, log in to your Google Analytics account and [set up a new property](https://support.google.com/analytics/answer/1042508?hl=en):
 
@@ -55,3 +61,15 @@ Example tracker markup if you are using Markdown:
 
 
 If you prefer, you can skip the badge and use a transparent pixel. To do so, simply append `?pixel` to the image URL. There are also "flat" style variants available, which are available when appending `?flat` or `?flat-gif` to the image URL. And that's it, add the tracker image to the pages you want to track and then head to your Google Analytics account to see real-time and aggregated visit analytics for your projects!
+
+It's useful to read the original project [FAQ](https://github.com/igrigorik/ga-beacon#faq)
+
+### Roadmap
+
+- [x] Modify original Go programm to optionally restrict usage by tracking id
+- [ ] Add GAE deployment help
+- [ ] Add setup help (update original help with recent workflow)
+- [ ] Deploy on AWS Elastic Beanstalk
+- [ ] Create docker image for universal deployment
+
+
