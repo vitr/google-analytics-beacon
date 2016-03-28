@@ -12,7 +12,7 @@ Unfortunately, many people don't bother with creating  their own instances and w
 
 This repo was created to help you with setting up your own Google Analytis Beacon application, so, you will never have availabiltiy issues like above.
 
-Its usage is also restricted by your onw tracking ids (`UA-XXXXXXXX-X`). The file `ga-beacon/conf.json` contains a white list of allowed tracking ids. This implies, you have to update the list everytime you want to track something with a new tracking id. Leave the list empty, if you don't want to restrict, but keep in mind, with no restrictions anyone can use your application instance for tracking their visitors and you may pay for that. Here an example of `ga-beacon/conf.json`
+Its usage is also restricted by your onw tracking ids (`UA-XXXXXXXX-X`). The file `ga-beacon/conf.json` contains a white list of allowed tracking ids. This implies, you have to update the list every time you want to track something with a new tracking id. Leave the list empty, if you don't want to restrict, but keep in mind, with no restrictions anyone can use your application instance for tracking their visitors and you may pay for that. Here an example of `ga-beacon/conf.json`
 
     {
         "TrackingIds": ["UA-XXXXXXXX-X","UA-YYYYYYYY-Y,"UA-ZZZZZZZZ-Z"]
