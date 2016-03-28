@@ -18,20 +18,14 @@ Its usage is also restricted by your onw tracking ids (`UA-XXXXXXXX-X`). The fil
         "TrackingIds": ["UA-XXXXXXXX-X","UA-YYYYYYYY-Y,"UA-ZZZZZZZZ-Z"]
     }
 
+### How to deploy on Google App Engine
+You should deploy this application on your server. Using Google App Engine is free and easiest way to do so. Be aware of GAE free usage limits https://cloud.google.com/appengine/docs/quotas#Requests. If you run over quota, you'll see the image above and lose some stats. Unless you have very popular resource or other people also use your instance for tracking (consider apply the restriction), GAE daily limits are very generous. There are two options for delpoyment on GAE:
 
-
-### How to deploy
-You should deploy this application on your server. Using Google App Engine is free and easiest way to do so. Be aware of GAE free usage limits https://cloud.google.com/appengine/docs/quotas#Requests. If you run over quota, you'll see the image above and lose some stats. Unless you have very popular resource or other people also use your instance for tracking (consider apply the restriction), GAE daily limits are very generous. There are two options for delpoyment
-
-1. Google Developers Console (easy)
-2. Google App Engine SDK for Go (advanced)
-
-#### Using Google Developers Console 
+#### Using Google Developers Console (easy)
 https://console.cloud.google.com/
 
-#### Using Google App Engine SDK for Go
+#### Using Google App Engine SDK for Go (advanced)
 https://cloud.google.com/appengine/downloads#Google_App_Engine_SDK_for_Go
-
 
 http://stackoverflow.com/questions/32107712/google-app-engine-app-deployment
 
