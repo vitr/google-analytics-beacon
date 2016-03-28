@@ -1,6 +1,5 @@
 # Google Analytics Beacon ![analytics image](https://raw.githubusercontent.com/igrigorik/ga-beacon/master/static/badge-flat.gif "Analytics Image - Flat")
 
----------------
 Sometimes it is impossible to embed the JavaScript tracking code provided by Google Analytics: the host page does not allow arbitrary JavaScript, and there is no Google Analytics integration. However, not all is lost! **If you can embed a simple image (pixel tracker), then you can beacon data to Google Analytics.**
 
 ---------------
