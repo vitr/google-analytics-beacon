@@ -28,7 +28,7 @@ You should deploy this application on your server. Using Google App Engine is fr
 3. Create a project **My-Project**
 4. Go to Development->Source code and connet the forked repo
 5. Activate Google Cloud Shell and run following commands
-6. cd ~/src/My-Project-ID/
+6. cd ~/src/My-Project-ID/master
 7. gcloud preview app deploy app.yaml --promote 
 8. Confirm and wait for the deployment success message
 8. The app is running now! You can check the badge at https://My-Project-ID.appspot.com/UA-XXXXXXXX-X/your-page and start using it. See [how to setup Google Analytics](#how-to-setup-google-analytics)
