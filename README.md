@@ -46,7 +46,7 @@ http://stackoverflow.com/questions/32107712/google-app-engine-app-deployment
 
 In my case, I got refused because the appcfg save my ouauth2 token in the file ~/.appcfg_oauth2_tokens, which happen to be another account of appengine . Simply remove the file and try again.
 
-### How to setup
+### How to setup Google Analytics
 
 First, log in to your Google Analytics account and [set up a new property](https://support.google.com/analytics/answer/1042508?hl=en):
 
