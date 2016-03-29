@@ -1,5 +1,4 @@
-# Google Analytics Beacon ![analytics image (flat)](https://raw.githubusercontent.com/vitr/google-analytics-beacon/master/static/badge-flat.gif)  
-[![Analytics](https://vitr-analytics.appspot.com/UA-75628680-1/google-analytics-beacon?pixel)](https://github.com/vitr/google-analytics-beacon)  
+# Google Analytics Beacon ![analytics image (flat)](https://raw.githubusercontent.com/vitr/google-analytics-beacon/master/static/badge-flat.gif)[![Analytics](https://vitr-analytics.appspot.com/UA-75628680-1/google-analytics-beacon?pixel)](https://github.com/vitr/google-analytics-beacon)  
 Sometimes it is impossible to embed the JavaScript tracking code provided by Google Analytics: the host page does not allow arbitrary JavaScript, and there is no Google Analytics integration. However, not all is lost! **If you can embed a simple image (pixel tracker), then you can beacon data to Google Analytics.**
 
 ---------------
