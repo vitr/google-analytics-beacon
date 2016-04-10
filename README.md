@@ -49,7 +49,7 @@ In my case, I got refused because the appcfg save my ouauth2 token in the file ~
 
 
 `cd c:\Users\New\goworkspace\src\`
-`appcfg.py -A vitr-analytics -V v2 update myapp/`
+`appcfg.py -A vitr-analytics update vitr-analytics/`
 
 ### How to setup Google Analytics
 
