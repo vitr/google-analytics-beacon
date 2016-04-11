@@ -29,7 +29,7 @@ You should deploy this application on your server. Using Google App Engine is fr
 3. Create a project **My-Project**
 4. Go to Development->Source code and connet the forked repo
 5. Activate Google Cloud Shell and run the following commands
-6. `cd ~/src/My-Project-ID/master`
+6. `cd ~/src/My-Project-ID/master`  
 7. `gcloud preview app deploy app.yaml --promote`
 8. Confirm and wait for the deployment success message
 8. The app is running now! You can check the badge at https://My-Project-ID.appspot.com/UA-XXXXXXXX-X/your-page and start using it. See [how to setup Google Analytics](#how-to-setup-google-analytics)
@@ -47,8 +47,7 @@ http://stackoverflow.com/questions/32107712/google-app-engine-app-deployment
 
 In my case, I got refused because the appcfg save my ouauth2 token in the file ~/.appcfg_oauth2_tokens, which happen to be another account of appengine . Simply remove the file and try again.
 
-
-`cd $GOPATH` or in win `cd %GOPATH%`
+`cd $GOPATH` or `cd %GOPATH%` on win    
 `appcfg.py -A your_app_name update google-analytics-beacon/`
 
 ### How to setup Google Analytics
