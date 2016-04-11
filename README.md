@@ -20,7 +20,7 @@ Its usage is also restricted by your onw tracking ids (`UA-XXXXXXXX-X`). The fil
 You may also auto-calculate the tracking path based in the "referer" information of the image. To activate this simple add `?useReferrer` to the image URL (or `&useReferer` if you need to combine this with the `?pixel`, `?flat` or `?flat-gif` parameter). Although they are some odd browsers that don't always send the referer header, the amount of traffic coming from those browsers is usually not relevant at all. Of course that if you need to measure the traffic from those odd browsers you should not use this method.
 
 ### How to deploy on Google App Engine
-You should deploy this application on your server. Using Google App Engine is free and easiest way to do so. Be aware of GAE free usage limits https://cloud.google.com/appengine/docs/quotas#Requests. If you run over quota, you'll see the image above and lose some stats. Unless you have very popular resource or other people also use your instance for tracking (consider applying the restriction), GAE daily limits are very generous. There are two options for delpoyment on GAE:
+You should deploy this application on your server. Using Google App Engine is free and easiest way to do so. Be aware of GAE free usage limits https://cloud.google.com/appengine/docs/quotas#Requests. If you run over quota, you'll see the image above and lose some stats. Unless you have very popular resource or other people also use your instance for tracking (consider applying the restriction), GAE daily limits are very generous. There are two options for deployment on GAE:
 
 #### Using Google Developers Console (easy)
 
@@ -49,7 +49,7 @@ In my case, I got refused because the appcfg save my ouauth2 token in the file ~
 
 
 `cd c:\Users\New\goworkspace\src\`
-`appcfg.py -A vitr-analytics update vitr-analytics/`
+`appcfg.py -A your_app_name update google-analytics-beacon/`
 
 ### How to setup Google Analytics
 
