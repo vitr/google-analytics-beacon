@@ -1,4 +1,4 @@
-# Google Analytics Beacon ![analytics image (flat)](https://raw.githubusercontent.com/vitr/google-analytics-beacon/master/static/badge-flat.gif)[![Analytics](https://vitr-analytics.appspot.com/UA-75628680-1/google-analytics-beacon?pixel)](https://github.com/vitr/google-analytics-beacon)  
+# Google Analytics Beacon ![analytics image (flat)](https://raw.githubusercontent.com/vitr/google-analytics-beacon/master/static/badge-flat.gif)[![Analytics](https://vitr-analytics.appspot.com/UA-75628680-1/google-analytics-beacon?pixel&useReferer)](https://github.com/vitr/google-analytics-beacon)  
 Sometimes it is impossible to embed the JavaScript tracking code provided by Google Analytics: the host page does not allow arbitrary JavaScript, and there is no Google Analytics integration. However, not all is lost! **If you can embed a simple image (pixel tracker), then you can beacon data to Google Analytics.**
 
 ---------------
@@ -30,12 +30,12 @@ You should deploy this application on your server. Using Google App Engine is fr
 4. Go to Development->Source code and connet the forked repo
 5. Activate Google Cloud Shell and run the following commands
 6. `cd ~/src/My-Project-ID/master`
-7. `gcloud preview app deploy app.yaml --promote` 
+7. `gcloud preview app deploy app.yaml --promote`
 8. Confirm and wait for the deployment success message
 8. The app is running now! You can check the badge at https://My-Project-ID.appspot.com/UA-XXXXXXXX-X/your-page and start using it. See [how to setup Google Analytics](#how-to-setup-google-analytics)
 
 
- 
+
 
 
 #### Using Google App Engine SDK for Go (advanced)
@@ -77,11 +77,9 @@ If you prefer, you can skip the badge and use a transparent pixel. To do so, sim
 It's useful to read the original project [FAQ](https://github.com/igrigorik/ga-beacon#faq)
 
 ### Roadmap
-- [ ] Add referer option from https://github.com/igrigorik/ga-beacon/commit/dd96cd440b98435b9e03d681f8e0e248328026a9 
+- [ ] Add referer option from https://github.com/igrigorik/ga-beacon/commit/dd96cd440b98435b9e03d681f8e0e248328026a9
 - [x] Modify original Go programm to optionally restrict usage by tracking id
 - [ ] Add GAE deployment help
 - [ ] Add setup help (update original help with recent workflow)
 - [ ] Deploy on AWS Elastic Beanstalk
 - [ ] Create docker image for universal deployment
-
-
