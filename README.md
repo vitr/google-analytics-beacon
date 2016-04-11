@@ -77,7 +77,7 @@ It's useful to read the original project [FAQ](https://github.com/igrigorik/ga-b
 
 ### Roadmap
 - [ ] Add referer option from https://github.com/igrigorik/ga-beacon/commit/dd96cd440b98435b9e03d681f8e0e248328026a9
-- [x] Modify original Go programm to optionally restrict usage by tracking id
+- [x] Modify original Go program to optionally restrict usage by tracking id
 - [ ] Add GAE deployment help
 - [ ] Add setup help (update original help with recent workflow)
 - [ ] Deploy on AWS Elastic Beanstalk
