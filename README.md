@@ -48,7 +48,7 @@ http://stackoverflow.com/questions/32107712/google-app-engine-app-deployment
 In my case, I got refused because the appcfg save my ouauth2 token in the file ~/.appcfg_oauth2_tokens, which happen to be another account of appengine . Simply remove the file and try again.
 
 
-`cd c:\Users\New\goworkspace\src\`  
+`cd $GOPATH` or in win `cd %GOPATH%`
 `appcfg.py -A your_app_name update google-analytics-beacon/`
 
 ### How to setup Google Analytics
