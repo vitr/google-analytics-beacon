@@ -1,7 +1,6 @@
 package beacon
 
 import (
-	"crypto/md5"
 	"crypto/rand"
 	"encoding/hex"
 	"fmt"
@@ -156,7 +155,6 @@ func handler(w http.ResponseWriter, r *http.Request) {
 
 	if len(cid) != 0 {
 		w.Header().Set("Cache-Control", "no-cache")
-		w.Header().Set("Etag", "cbe59136ae412f9b0a95b9a0d2ae4d30")
 		w.Header().Set("CID", cid)
 
 		logHit(c, params, query, r.Header.Get("User-Agent"), r.RemoteAddr, cid)
@@ -207,15 +205,4 @@ func checkTrackingId(trackingId string, allowed []string) bool {
 		}
 	}
 	return false
-}
-
-func ComputeMd5(fileContent []byte) (string, error) {
-  var result string
-
-  hash := md5.New()
-  if _, err := io.Copy(hash, fileContent); err != nil {
-    return result, err
-  }
-
-  return fmt.Sprintf("%x", hash.Sum(result)), nil
 }
